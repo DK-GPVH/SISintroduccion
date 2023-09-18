@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introducccion a la Ingeniera de Sistemas</title>
+    <link rel="stylesheet" href="./estilos/styles.css">
+</head>
+<body>
+    <header>
+        <img src="./assets/coding-image.avif" alt="coding-image" id="first-image">
+        <h1>ASIGNATURA : INTRODUCCION A LA INGENIERIA DE SISTEMAS E INFORMATICA</h1>
+    </header>
+    <main>
+        <section>
+            <h2>Producto Academico 2: <span>Preguntas 5-10</span></h2>
+            <div id="question-5">
+                <form action="">
+                    <label for="">Nombre :</label>
+                    <input type="text" name="nombre" required>
+                    <label for="">Edad : <span id="edad-selection"></span> </label>
+                    <input type="range" name="edad" min="10" max="100" id="edad-range" onchange={mostrar_edad()} required value="10">
+                    <label for="">Carrera : </label>
+                    <input type="text" name="carrera" required>
+                    <input type="submit" value="SALUDAR" id="btn-saludar">
+                </form>
+                <div id="saludo-container">
+                    <div id="saludo-imagen">
+                        <img src="./assets/estudiante-icono-png.png" alt="estudiante-icono">
+                    </div>
+                    <div id="saludo-datos">
+                        <p>Hola <span id="nombre-content"></span></p>
+                        <p>Tu edad es: <span id="edad-content"></span></p>
+                        <p>Tu carrera es: <span id="carrera-content"></span></p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="question-6">
+                <div id="triangulo-container">
+                    <div>
+                        <span id="medida-izquierda"></span>
+                    </div>
+                    <div id="triangulo-content">
+                        <div id="triangulo"></div>
+                        <span id="medida-centro"></span>
+                    </div>
+                    <div>
+                        <span id="medida-derecha"></span>
+                    </div>
+                </div>
+                <div id="triangulo-form"> 
+                    <form action="">
+                        <label for="">Primera Medida :</label>
+                        <input type="number" min="0" name="medidas" value="0">
+                        <label for="">Segunda Medida :</label>
+                        <input type="number" min="0" name="medidas" value="0">
+                        <label for="">Tercera Medida</label>
+                        <input type="number" min="0" name="medidas" value="0">
+                        <input type="button" value="Calcular" id="calcular-area">
+                    </form>
+                    <p>Area del triangulo: <span id="area-triangulo"></span></p>
+                </div>
+            </div>
+
+            <div id="question-7">
+                <form action="">
+                    <label for="">Ingrese su numero :</label>
+                    <input type="number" min="100" max="999" id="numero-invertir" value="100">
+                    <img src="./assets/reverse.png" alt="" id="invertir-button"> 
+                </form>
+                <p>
+                    Su numero invertido es : <span id="numero-invertido"></span>
+                </p>
+            </div>
+            
+        </section>
+        <aside>
+            <div id="question-8">
+                <form action="">
+                    <label for="">Ingrese el valor para a :</label>
+                    <input type="number" min="0" name="ecuacion-cuadratica">
+                    <label for="">Ingrese el valor para b :</label>
+                    <input type="number" min="0" name="ecuacion-cuadratica">
+                    <label for="">Ingrese el valor para c :</label>
+                    <input type="number" min="0" name="ecuacion-cuadratica">
+                    <input type="button" value="Calcular" id="determinante-button">
+                </form>
+                <p><span id="valor-a">a</span>x^2 + <span id="valor-b">b</span>x + <span id="valor-c">c</span></p>
+                <p>
+                    Su determinante es : <span id="numero-determinante"></span>
+                </p>
+            </div>
+            <div id="question-9">
+                <form action="">
+                    <label for="">Ingrese la nota 1 :</label>
+                    <input type="number" min="0" name="notas" max="20" value="0">
+                    <label for="">Ingrese la nota 2 :</label>
+                    <input type="number" min="0" name="notas" max="20" value="0">
+                    <label for="">Ingrese la nota 3 :</label>
+                    <input type="number" min="0" name="notas" max="20" value="0">
+                    <label for="">Ingrese la nota 4 :</label>
+                    <input type="number" min="0" name="notas" max="20" value="0">
+                    <input type="button" value="Calcular" id="promedio-button">
+                </form>
+                <p>
+                    Su promedio es : <span id="numero-promedio"></span>
+                </p>
+            </div>
+            <div id="question-10">
+                <form action="">
+                    <label for="">Ingrese su numero :</label>
+                    <input type="number" id="numero-averiguar" value="0">
+                    <input type="button" value="Averiguar" id="par-impar-button"> 
+                </form>
+                <p>
+                    Su numero es : <span id="numero-par-impar"></span>
+                </p>
+            </div>
+        </aside> 
+    </main>
+    <footer>
+        <img src="./assets/logo-U-Continental.png" alt="universidad-continental">
+        <p>@2023</p>
+    </footer>
+</body>
+<script src="./script/script.js">
+
+</script>
+</html>
